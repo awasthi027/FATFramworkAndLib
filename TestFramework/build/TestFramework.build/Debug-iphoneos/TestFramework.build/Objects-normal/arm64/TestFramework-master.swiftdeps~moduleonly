@@ -1,5 +1,0 @@
-version: "Apple Swift version 5.2.4 (swiftlang-1103.0.32.9 clang-1103.0.32.53)"
-options: "77ea752b1402047e04d484d7f0ac74a4"
-build_time: [1598161040, 532853000]
-inputs:
-  "/Users/chandrakant/Desktop/TestFramework/TestFramework/TODOClass.swift": [1598160819, 435926215]
