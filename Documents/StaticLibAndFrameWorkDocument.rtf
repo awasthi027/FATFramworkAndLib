@@ -10,7 +10,7 @@
 \csgenericrgb\c0\c0\c0\c85000;\csgenericrgb\c100000\c100000\c100000;\csgenericrgb\c77000\c10200\c8600;\csgenericrgb\c60759\c13753\c57628;\csgenericrgb\c22454\c0\c62803;
 \csgenericrgb\c42190\c21278\c66379;\csgenericrgb\c10981\c27276\c28869;\csgenericrgb\c19418\c42935\c45455;\csgenericrgb\c36526\c42188\c47515;\csgenericrgb\c11000\c0\c81000;
 }
-\paperw11900\paperh16840\margl1440\margr1440\vieww26280\viewh15080\viewkind1
+\paperw11900\paperh16840\margl1440\margr1440\vieww26580\viewh15080\viewkind1
 \pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
 
 \f0\fs28 \cf2 \cb3 Static Library                                                                                                                
@@ -791,4 +791,42 @@ Step 1. Open terminal\
 Step 2. Navigate to framework file path\
 Step 3. Run command \
 \
-lipo -remove architucturename  frameworkname.framework -o frameworkname.framework}
+lipo -remove architucturename  frameworkname.framework -o frameworkname.framework\
+\
+4. Merge device and simulator .swiftModule for .a file. If facing issue architecture issue in compiling. \
+\
+Add below line script after creating framework.\
+\
+\pard\tx593\pardeftab593\pardirnatural\partightenfactor0
+
+\f1\b \cf8 echo
+\f0\b0 \cf5  \cf14 8\cf5  Copy devices swiftmodule files at Destination_Path Static Library\
+\
+cp -r \cf7 "\cf5 $\{DEVICE_LIBRARY_PATH\}\cf7 /\cf5 $\{FRAMEWORK_NAME\}\cf7 .swiftmodule"\cf5  \cf7 "\cf5 $\{Destination_Path\}\cf7 /\cf5 $\{FRAMEWORK_NAME\}\cf7 .swiftmodule/"\cf5 \
+\
+
+\f1\b \cf8 echo
+\f0\b0 \cf5  \cf14 9\cf5  Merge Device and Simulator swift module \
+\
+cp -r \cf7 "\cf5 $\{SIMULATOR_LIBRARY_PATH\}\cf7 /\cf5 $\{FRAMEWORK_NAME\}\cf7 .swiftmodule/"\cf5  \cf7 "\cf5 $\{Destination_Path\}\cf7 /\cf5 $\{FRAMEWORK_NAME\}\cf7 .swiftmodule/"\
+\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\fs28 \cf2 \cb3 Swift Framework                                                                                                             
+\fs24 \cb1 \
+\pard\tx593\pardeftab593\pardirnatural\partightenfactor0
+\cf7 \cb6 \
+\
+\cf5 4. Merge device and simulator .swiftModule for  framework. If facing issue architecture issue in compiling. \
+\
+\pard\tx593\pardeftab593\pardirnatural\partightenfactor0
+
+\f1\b \cf8 echo
+\f0\b0 \cf5  
+\f4 \uc0\u55357 \u56397 
+\f0  \cf14 8\cf5  Belew commands will merge Simulator and Device Library swift module and create fat library, which we can use debug on device and Simulator\
+\
+cp -r \cf7 "\cf5 $\{SIMULATOR_LIBRARY_PATH\}\cf7 /Modules/\cf5 $\{FRAMEWORK_NAME\}\cf7 .swiftmodule/"\cf5  \cf7 "\cf5 $\{Destination_Path\}\cf7 /Modules/\cf5 $\{FRAMEWORK_NAME\}\cf7 .swiftmodule/"
+\f2 \cf5 \
+}

@@ -8,7 +8,6 @@
 
 import UIKit
 import TestStaticLibSwift
-
 class ViewController: UIViewController {
 
     override func viewDidLoad() {

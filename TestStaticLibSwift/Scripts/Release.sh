@@ -53,21 +53,19 @@ fi
 # Make an universal binary
 ######################
 
-echo 👍 7 Belew commands will merge Simulator and Device Library swift module and create fat library, which we can use debug on device and Simulator
-
-cp -r "${DEVICE_LIBRARY_PATH}/${FRAMEWORK_NAME}.swiftmodule" "${Destination_Path}/${FRAMEWORK_NAME}.swiftmodule"
-
-echo 👍 7 Belew commands will merge Simulator and Device Library which we can use debug on device and Simulator
+echo 👍 7 Belew commands will merge Simulator and Device Library and create fat library, which we can use debug on device and Simulator
 
 lipo "${SIMULATOR_LIBRARY_PATH}/lib${FRAMEWORK_NAME}.a" "${DEVICE_LIBRARY_PATH}/lib${FRAMEWORK_NAME}.a" -create -output "${Destination_Path}/lib${FRAMEWORK_NAME}.a"
 
-echo 👍 8 Belew commands will merge Simulator and Device Library swift module and create fat library, which we can use debug on device and Simulator
+echo 8 Copy devices swiftmodule files at Destination_Path Static Library
 
-# cp -r "${SIMULATOR_LIBRARY_PATH}/${FRAMEWORK_NAME}.swiftmodule" "${Destination_Path}/${FRAMEWORK_NAME}.swiftmodule"
+cp -r "${DEVICE_LIBRARY_PATH}/${FRAMEWORK_NAME}.swiftmodule" "${Destination_Path}/${FRAMEWORK_NAME}.swiftmodule/"
 
-cp -r "${SIMULATOR_LIBRARY_PATH}/${FRAMEWORK_NAME}.swiftmodule" "${Destination_Path}/${FRAMEWORK_NAME}.swiftmodule"
+echo 9 Merge Device and Simulator swift module 
 
-echo ⛳✅ 9 Created Universal Lib at path:- ${Destination_Path}.
+cp -r "${SIMULATOR_LIBRARY_PATH}/${FRAMEWORK_NAME}.swiftmodule/" "${Destination_Path}/${FRAMEWORK_NAME}.swiftmodule/"
+
+echo ⛳✅ 10 Created Universal Lib at path:- ${Destination_Path}.
 
 #ur workspace to insert its path.
 exit 0
