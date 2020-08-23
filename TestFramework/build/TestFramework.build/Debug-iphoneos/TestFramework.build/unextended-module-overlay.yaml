@@ -1,0 +1,13 @@
+{
+  'version': 0,
+  'case-sensitive': 'false',
+  'roots': [{
+    'type': 'directory',
+    'name': "/Users/chandrakant/Library/Developer/Xcode/DerivedData/TestFramework-aguhyhlaltqgagezefifbyfoxgqn/Build/Products/Debug-iphoneos/TestFramework.framework/Modules"
+    'contents': [{
+      'type': 'file',
+      'name': "module.modulemap",
+      'external-contents': "/Users/chandrakant/Desktop/TestFramework/build/TestFramework.build/Debug-iphoneos/TestFramework.build/unextended-module.modulemap",
+    }]
+  }]
+}
