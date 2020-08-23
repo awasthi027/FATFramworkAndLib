@@ -51,6 +51,10 @@ cp -r "${DEVICE_LIBRARY_PATH}/." "${Destination_Path}"
 
 lipo "${SIMULATOR_LIBRARY_PATH}/${FRAMEWORK_NAME}" "${DEVICE_LIBRARY_PATH}/${FRAMEWORK_NAME}" -create -output "${Destination_Path}/${FRAMEWORK_NAME}"
 
-echo ⛳✅ 8 Created Universal Lib at path:- ${Destination_Path}.
+echo 👍 8 Belew commands will merge Simulator and Device Library swift module and create fat library, which we can use debug on device and Simulator
+
+cp -r "${SIMULATOR_LIBRARY_PATH}/Modules/${FRAMEWORK_NAME}.swiftmodule/" "${Destination_Path}/Modules/${FRAMEWORK_NAME}.swiftmodule/"
+
+echo ⛳✅ 9 Created Universal Lib at path:- ${Destination_Path}.
 
 exit 0

@@ -320,6 +320,7 @@
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 5NV8XFN9EY;
 				DYLIB_INSTALL_NAME_BASE = "";
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/FATFramworkTest/Frameworks",
@@ -346,6 +347,7 @@
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 5NV8XFN9EY;
 				DYLIB_INSTALL_NAME_BASE = "";
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/FATFramworkTest/Frameworks",

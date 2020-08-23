@@ -1,0 +1,5 @@
+version: "Apple Swift version 5.2.4 (swiftlang-1103.0.32.9 clang-1103.0.32.53)"
+options: "cd60d8575eadbe722ed79e5a9b18453e"
+build_time: [1598163471, 175336000]
+inputs:
+  "/Users/chandrakant/Desktop/FATFramworkAndLib/TestFramework/TestFramework/TODOClass.swift": !dirty [1598160819, 435926215]

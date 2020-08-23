@@ -1,0 +1,141 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1671\cocoasubrtf600
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fnil\fcharset0 Menlo-Regular;\f2\fnil\fcharset0 Menlo-Bold;
+}
+{\colortbl;\red255\green255\blue255;\red100\green56\blue32;\red255\green255\blue255;\red196\green26\blue22;
+\red0\green0\blue0;\red0\green0\blue0;\red0\green0\blue0;\red108\green54\blue169;}
+{\*\expandedcolortbl;;\csgenericrgb\c39147\c22031\c12446;\csgenericrgb\c100000\c100000\c100000;\csgenericrgb\c77000\c10200\c8600;
+\csgenericrgb\c0\c0\c0\c85000;\cssrgb\c0\c0\c0;\csgenericrgb\c0\c0\c0;\csgenericrgb\c42190\c21278\c66379;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww22220\viewh11640\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs36 \cf0 How import Objective-C static library project file in Swift Sample Code base  for debug.
+\fs24 \
+\
+
+\fs28 Step 1. Copy paste complete sdk source in sample project directory \
+\
+Step 2. Add static library project file in sample code.\
+\
+Step 3.   Add Library (.a) dependancy and required  C++ library or curl or lumberjack framework and etc\
+\
+Select target-> Build Phases-> Add Library and framework.\
+\
+Step 4. Link Dependency  \
+\
+Select on + and add universal library dependency.\
+\
+Step 6. Set header search path for library .h files \
+\
+Select target-> Build Setting-> Header Search Path\
+\
+Put you library path like \'93$(SRCROOT)/ConnectSDKApp/HarmanAhaConnectSDK"\
+\
+And Other Linker Flag \
+\
+Project Target-> Build Setting-> Other Linker Flag = -ObjC\
+\
+Step 7. Compile Universal library\
+\
+Open library target separately and compile Universal library.\
+\
+Once compilation is done. Check in library path in universal folder whether .a file created or not. \
+\
+If created fine. Otherwise check why it\'92s not created. .a file created through script. Which in \
+\
+Library Universal target -> Build Phase and Run Script. \
+\
+If .a file is not create no need to sample code. It will not compile unit .a file not created.\
+\
+\
+FAQ. \
+\
+1. Not able to find .h to header file which you linked in bridge header and tried to access like below.\
+\
+\
+\pard\tx593\pardeftab593\pardirnatural\partightenfactor0
+
+\f1 \cf2 \cb3 #import \cf4 <HarmanAhaConnectSDK/HACServiceManager.h>\cf5 \
+\cf2 #import \cf4 <HarmanAhaConnectSDK/Public/IHServiceManagerCallBack.h>\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0 \cf0 \cb1 Answers. You have not linked correct header search path. Please check step and set correct header search path.\
+\
+\
+\
+2. Linker error 
+\f1 \cf6 \cb3 HACServiceManager Objective C class missing.\
+\
+
+\f0 \cf0 \cb1 \
+Answers. Link dependency of your universal library step 4\
+\pard\tx593\pardeftab593\pardirnatural\partightenfactor0
+
+\f1 \cf4 \cb3 \
+\pard\tx593\pardeftab593\pardirnatural\partightenfactor0
+
+\f0 \cf0 \cb1 \
+Question 3. Application crashing\'85 because this reason \
+\
+\pard\tx593\pardeftab593\pardirnatural\partightenfactor0
+
+\f2\b \cf7 \cb3 reason: '*** -[__NSDictionaryM setObject:forKey:]: object cannot be nil (key: com.hac.mapService.TomTom)'\
+\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\b0 \cf0 \cb1 Answers. This error coming because we are not setting other linker flag. When try to convert class name from String like we are doing.\
+\
+\pard\tx593\pardeftab593\pardirnatural\partightenfactor0
+
+\f1\fs24 \cf8 \cb3 NSClassFromString\cf5 (@\'93\cf4 MapUpdateService\cf5 \'94);\
+\
+We have to add in sample code build setting -> Other Linker Flags -ObjC\
+\
+Crash will recover.
+\f0\fs28 \cf0 \cb1 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \
+\pard\tx593\pardeftab593\pardirnatural\partightenfactor0
+\cf0 Question 4. Universal .a file not getting creating after building success.\
+\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 Answers. Check script may be something wrong with script.\
+\
+\
+\pard\tx593\pardeftab593\pardirnatural\partightenfactor0
+\cf0 Question 5. What is the use of script.\
+\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardeftab593\pardirnatural\partightenfactor0
+\cf0 Answers. Script required to create universal library which is required for both device and simulator to compile. \
+\
+.a file only compile same time for both device and simulator when created with device and simulator architecture.\
+\
+\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\fs36 \cf0 Want to access .a static in you Project.\
+\
+
+\fs28 Step 1. Add Universal library (.a) in your sample code which will compile for both Simulator and Devices\
+\
+Step 2.   Add Library (.a) dependancy and required  C++ library or curl or lumberjack framework and etc\
+\
+Select target-> Build Phases-> Add Library and framework.\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardeftab593\pardirnatural\partightenfactor0
+\cf0 \
+Step 3. Import .h file in Bridge header\
+\
+\
+Compile.\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\fs24 \cf0 \
+\
+\pard\tx593\pardeftab593\pardirnatural\partightenfactor0
+\cf0 \
+}

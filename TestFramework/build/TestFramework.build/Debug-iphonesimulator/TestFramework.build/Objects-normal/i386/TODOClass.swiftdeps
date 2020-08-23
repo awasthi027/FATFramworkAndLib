@@ -1,0 +1,207 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "ResultDict"
+- "ResultData"
+- "TODOClass"
+provides-nominal:
+- "13TestFramework10ResultDictC"
+- "13TestFramework10ResultDataC"
+- "13TestFramework9TODOClassC"
+provides-member:
+- ["13TestFramework10ResultDictC", ""]
+- ["13TestFramework10ResultDataC", ""]
+- ["13TestFramework9TODOClassC", ""]
+provides-dynamic-lookup:
+- "contentType"
+- "data"
+- "dict"
+- "doSothingWithResultData"
+- "doSothingWithResultDict"
+- "takeSwiftStaticLibAction"
+depends-top-level:
+- "AssignmentPrecedence"
+- "Data"
+- !private "FloatLiteralType"
+- !private "IntegerLiteralType"
+- "NSObject"
+- !private "PureSwiftClass"
+- "ResultData"
+- "ResultDict"
+- "String"
+- "StringLiteralType"
+- !private "SwiftAndObjectCompatibale"
+- "TODOClass"
+- !private "print"
+depends-member:
+- ["SK", "init"]
+- ["s7CVarArgP", "Data"]
+- !private ["s7CVarArgP", "PureSwiftClass"]
+- !private ["s7CVarArgP", "ResultData"]
+- !private ["s7CVarArgP", "ResultDict"]
+- !private ["s7CVarArgP", "SwiftAndObjectCompatibale"]
+- ["s7CVarArgP", ""]
+- !private ["s7CVarArgP", "contentType"]
+- !private ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "print"]
+- ["Sl", "init"]
+- ["10Foundation15ContiguousBytesP", "init"]
+- ["s28CustomDebugStringConvertibleP", "Data"]
+- !private ["s28CustomDebugStringConvertibleP", "PureSwiftClass"]
+- !private ["s28CustomDebugStringConvertibleP", "ResultData"]
+- !private ["s28CustomDebugStringConvertibleP", "ResultDict"]
+- !private ["s28CustomDebugStringConvertibleP", "SwiftAndObjectCompatibale"]
+- ["s28CustomDebugStringConvertibleP", ""]
+- !private ["s28CustomDebugStringConvertibleP", "contentType"]
+- ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "print"]
+- ["s17CustomReflectableP", "init"]
+- ["s23CustomStringConvertibleP", "Data"]
+- !private ["s23CustomStringConvertibleP", "PureSwiftClass"]
+- !private ["s23CustomStringConvertibleP", "ResultData"]
+- !private ["s23CustomStringConvertibleP", "ResultDict"]
+- !private ["s23CustomStringConvertibleP", "SwiftAndObjectCompatibale"]
+- ["s23CustomStringConvertibleP", ""]
+- !private ["s23CustomStringConvertibleP", "appendInterpolation"]
+- !private ["s23CustomStringConvertibleP", "appendLiteral"]
+- !private ["s23CustomStringConvertibleP", "contentType"]
+- ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "print"]
+- ["10Foundation4DataV", "init"]
+- ["10Foundation12DataProtocolP", "init"]
+- ["Se", "init"]
+- !private ["s26DefaultStringInterpolationV", "appendInterpolation"]
+- !private ["s26DefaultStringInterpolationV", "appendLiteral"]
+- ["SE", "init"]
+- ["SQ", "Data"]
+- !private ["SQ", "PureSwiftClass"]
+- !private ["SQ", "ResultData"]
+- !private ["SQ", "ResultDict"]
+- !private ["SQ", "SwiftAndObjectCompatibale"]
+- ["SQ", ""]
+- !private ["SQ", "contentType"]
+- ["SQ", "init"]
+- !private ["SQ", "print"]
+- ["SH", "Data"]
+- !private ["SH", "PureSwiftClass"]
+- !private ["SH", "ResultData"]
+- !private ["SH", "ResultDict"]
+- !private ["SH", "SwiftAndObjectCompatibale"]
+- ["SH", ""]
+- !private ["SH", "contentType"]
+- ["SH", "init"]
+- !private ["SH", "print"]
+- ["SM", "init"]
+- ["10Foundation19MutableDataProtocolP", "init"]
+- ["So8NSObjectC", "Data"]
+- !private ["So8NSObjectC", "PureSwiftClass"]
+- ["So8NSObjectC", "ResultData"]
+- ["So8NSObjectC", "ResultDict"]
+- ["So8NSObjectC", "String"]
+- !private ["So8NSObjectC", "SwiftAndObjectCompatibale"]
+- ["So8NSObjectC", ""]
+- ["So8NSObjectC", "contentType"]
+- ["So8NSObjectC", "data"]
+- ["So8NSObjectC", "dict"]
+- ["So8NSObjectC", "doSothingWithResultData"]
+- ["So8NSObjectC", "doSothingWithResultDict"]
+- ["So8NSObjectC", "init"]
+- !private ["So8NSObjectC", "print"]
+- ["So8NSObjectC", "takeSwiftStaticLibAction"]
+- ["So8NSObjectP", "Data"]
+- !private ["So8NSObjectP", "PureSwiftClass"]
+- !private ["So8NSObjectP", "ResultData"]
+- !private ["So8NSObjectP", "ResultDict"]
+- !private ["So8NSObjectP", "SwiftAndObjectCompatibale"]
+- ["So8NSObjectP", ""]
+- !private ["So8NSObjectP", "contentType"]
+- !private ["So8NSObjectP", "init"]
+- !private ["So8NSObjectP", "print"]
+- ["Sk", "init"]
+- ["Sm", "init"]
+- ["10Foundation20ReferenceConvertibleP", "init"]
+- ["13TestFramework10ResultDataC", "Data"]
+- ["13TestFramework10ResultDataC", "String"]
+- ["13TestFramework10ResultDataC", "contentType"]
+- ["13TestFramework10ResultDataC", "data"]
+- ["13TestFramework10ResultDataC", "deinit"]
+- ["13TestFramework10ResultDataC", "init"]
+- ["13TestFramework10ResultDictC", "String"]
+- ["13TestFramework10ResultDictC", "contentType"]
+- ["13TestFramework10ResultDictC", "deinit"]
+- ["13TestFramework10ResultDictC", "dict"]
+- ["13TestFramework10ResultDictC", "init"]
+- ["ST", "init"]
+- !private ["s27StringInterpolationProtocolP", "appendInterpolation"]
+- !private ["s27StringInterpolationProtocolP", "appendLiteral"]
+- !private ["13TestFramework9TODOClassC", "PureSwiftClass"]
+- ["13TestFramework9TODOClassC", "ResultData"]
+- ["13TestFramework9TODOClassC", "ResultDict"]
+- ["13TestFramework9TODOClassC", "String"]
+- !private ["13TestFramework9TODOClassC", "SwiftAndObjectCompatibale"]
+- ["13TestFramework9TODOClassC", "deinit"]
+- ["13TestFramework9TODOClassC", "doSothingWithResultData"]
+- ["13TestFramework9TODOClassC", "doSothingWithResultDict"]
+- ["13TestFramework9TODOClassC", "init"]
+- !private ["13TestFramework9TODOClassC", "print"]
+- ["13TestFramework9TODOClassC", "takeSwiftStaticLibAction"]
+- !private ["s16TextOutputStreamP", "appendInterpolation"]
+- !private ["s16TextOutputStreamP", "appendLiteral"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "Data"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "PureSwiftClass"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "ResultData"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "ResultDict"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "SwiftAndObjectCompatibale"]
+- ["10Foundation27_KeyValueCodingAndObservingP", ""]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "contentType"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "print"]
+- ["s21_ObjectiveCBridgeableP", "init"]
+depends-nominal:
+- "SK"
+- "s7CVarArgP"
+- "Sl"
+- "10Foundation15ContiguousBytesP"
+- "s28CustomDebugStringConvertibleP"
+- "s17CustomReflectableP"
+- "s23CustomStringConvertibleP"
+- "10Foundation4DataV"
+- "10Foundation12DataProtocolP"
+- "Se"
+- !private "s26DefaultStringInterpolationV"
+- "SE"
+- "SQ"
+- "SH"
+- "SM"
+- "10Foundation19MutableDataProtocolP"
+- "So8NSObjectC"
+- "So8NSObjectP"
+- "Sk"
+- "Sm"
+- "10Foundation20ReferenceConvertibleP"
+- "13TestFramework10ResultDataC"
+- "13TestFramework10ResultDictC"
+- "ST"
+- !private "s27StringInterpolationProtocolP"
+- "13TestFramework9TODOClassC"
+- !private "s16TextOutputStreamP"
+- "10Foundation27_KeyValueCodingAndObservingP"
+- "s21_ObjectiveCBridgeableP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/ObjectiveC.swiftmodule/i386.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Dispatch.swiftmodule/i386.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Darwin.swiftmodule/i386.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Foundation.swiftmodule/i386.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/CoreFoundation.swiftmodule/i386.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/CoreGraphics.swiftmodule/i386.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Swift.swiftmodule/i386.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/SwiftOnoneSupport.swiftmodule/i386.swiftmodule"
+- "/Users/chandrakant/Desktop/FATFramworkAndLib/TestFramework/TestFramework/TestFramework.h"
+- "/Users/chandrakant/Desktop/FATFramworkAndLib/TestFramework/build/TestFramework.build/Debug-iphonesimulator/TestFramework.build/unextended-module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.6.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/apinotes/Dispatch.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.6.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.6.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.6.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.6.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+interface-hash: "b3eddd13ae301bb6d4a973df06bd7ece"
