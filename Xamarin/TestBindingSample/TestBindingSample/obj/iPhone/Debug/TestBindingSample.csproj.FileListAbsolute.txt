@@ -1,0 +1,15 @@
+/Users/chandrakant/Desktop/TestBindingSample/TestBindingSample/bin/iPhone/Debug/TestBindingSample.exe
+/Users/chandrakant/Desktop/TestBindingSample/TestBindingSample/bin/iPhone/Debug/TestBindingSample.pdb
+/Users/chandrakant/Desktop/TestBindingSample/TestBindingSample/bin/iPhone/Debug/Xamarin.Essentials.dll
+/Users/chandrakant/Desktop/TestBindingSample/TestBindingSample/bin/iPhone/Debug/Xamarin.Essentials.pdb
+/Users/chandrakant/Desktop/TestBindingSample/TestBindingSample/bin/iPhone/Debug/NativeLibrary.dll
+/Users/chandrakant/Desktop/TestBindingSample/TestBindingSample/obj/iPhone/Debug/device-builds/iphone11.8-13.6/ibtool/_BundleResourceWithLogicalName.items
+/Users/chandrakant/Desktop/TestBindingSample/TestBindingSample/obj/iPhone/Debug/device-builds/iphone11.8-13.6/actool/_PartialAppManifest.items
+/Users/chandrakant/Desktop/TestBindingSample/TestBindingSample/obj/iPhone/Debug/device-builds/iphone11.8-13.6/actool/_BundleResourceWithLogicalName.items
+/Users/chandrakant/Desktop/TestBindingSample/TestBindingSample/obj/iPhone/Debug/device-builds/iphone11.8-13.6/coremlc/_PartialAppManifest.items
+/Users/chandrakant/Desktop/TestBindingSample/TestBindingSample/obj/iPhone/Debug/device-builds/iphone11.8-13.6/coremlc/_BundleResourceWithLogicalName.items
+/Users/chandrakant/Desktop/TestBindingSample/TestBindingSample/obj/iPhone/Debug/device-builds/iphone11.8-13.6/optimized/
+/Users/chandrakant/Desktop/TestBindingSample/TestBindingSample/obj/iPhone/Debug/TestBindingSample.csproj.CoreCompileInputs.cache
+/Users/chandrakant/Desktop/TestBindingSample/TestBindingSample/obj/iPhone/Debug/TestBindingSample.csproj.CopyComplete
+/Users/chandrakant/Desktop/TestBindingSample/TestBindingSample/obj/iPhone/Debug/TestBindingSample.exe
+/Users/chandrakant/Desktop/TestBindingSample/TestBindingSample/obj/iPhone/Debug/TestBindingSample.pdb

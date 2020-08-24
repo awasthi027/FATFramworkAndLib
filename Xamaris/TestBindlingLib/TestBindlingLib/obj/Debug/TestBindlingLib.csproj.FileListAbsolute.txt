@@ -1,6 +1,0 @@
-/Users/chandrakant/Desktop/TestBindlingLib/TestBindlingLib/bin/Debug/NativeLibrary.dll
-/Users/chandrakant/Desktop/TestBindlingLib/TestBindlingLib/bin/Debug/NativeLibrary.pdb
-/Users/chandrakant/Desktop/TestBindlingLib/TestBindlingLib/obj/Debug/TestBindlingLib.csprojAssemblyReference.cache
-/Users/chandrakant/Desktop/TestBindlingLib/TestBindlingLib/obj/Debug/TestBindlingLib.csproj.CoreCompileInputs.cache
-/Users/chandrakant/Desktop/TestBindlingLib/TestBindlingLib/obj/Debug/NativeLibrary.dll
-/Users/chandrakant/Desktop/TestBindlingLib/TestBindlingLib/obj/Debug/NativeLibrary.pdb

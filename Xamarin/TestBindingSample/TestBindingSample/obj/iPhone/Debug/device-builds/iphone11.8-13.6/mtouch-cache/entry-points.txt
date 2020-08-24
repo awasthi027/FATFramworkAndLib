@@ -1,0 +1,31 @@
+Function=SystemNative_ConvertErrorPlatformToPal
+	/Users/chandrakant/Desktop/TestBindingSample/TestBindingSample/obj/iPhone/Debug/device-builds/iphone11.8-13.6/mtouch-cache/1-Link/mscorlib.dll
+Function=SystemNative_ConvertErrorPalToPlatform
+	/Users/chandrakant/Desktop/TestBindingSample/TestBindingSample/obj/iPhone/Debug/device-builds/iphone11.8-13.6/mtouch-cache/1-Link/mscorlib.dll
+Function=SystemNative_StrErrorR
+	/Users/chandrakant/Desktop/TestBindingSample/TestBindingSample/obj/iPhone/Debug/device-builds/iphone11.8-13.6/mtouch-cache/1-Link/mscorlib.dll
+Function=SystemNative_GetNonCryptographicallySecureRandomBytes
+	/Users/chandrakant/Desktop/TestBindingSample/TestBindingSample/obj/iPhone/Debug/device-builds/iphone11.8-13.6/mtouch-cache/1-Link/mscorlib.dll
+Function=SystemNative_Stat2
+	/Users/chandrakant/Desktop/TestBindingSample/TestBindingSample/obj/iPhone/Debug/device-builds/iphone11.8-13.6/mtouch-cache/1-Link/mscorlib.dll
+Function=SystemNative_LStat2
+	/Users/chandrakant/Desktop/TestBindingSample/TestBindingSample/obj/iPhone/Debug/device-builds/iphone11.8-13.6/mtouch-cache/1-Link/mscorlib.dll
+Function=xamarin_timezone_get_local_name
+	/Users/chandrakant/Desktop/TestBindingSample/TestBindingSample/obj/iPhone/Debug/device-builds/iphone11.8-13.6/mtouch-cache/1-Link/mscorlib.dll
+Function=xamarin_timezone_get_data
+	/Users/chandrakant/Desktop/TestBindingSample/TestBindingSample/obj/iPhone/Debug/device-builds/iphone11.8-13.6/mtouch-cache/1-Link/mscorlib.dll
+Function=xamarin_log
+	/Users/chandrakant/Desktop/TestBindingSample/TestBindingSample/obj/iPhone/Debug/device-builds/iphone11.8-13.6/mtouch-cache/1-Link/mscorlib.dll
+Function=xamarin_find_protocol_wrapper_type
+	/Users/chandrakant/Desktop/TestBindingSample/TestBindingSample/obj/iPhone/Debug/device-builds/iphone11.8-13.6/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_get_block_descriptor
+	/Users/chandrakant/Desktop/TestBindingSample/TestBindingSample/obj/iPhone/Debug/device-builds/iphone11.8-13.6/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=UIApplicationMain
+	/Users/chandrakant/Desktop/TestBindingSample/TestBindingSample/obj/iPhone/Debug/device-builds/iphone11.8-13.6/mtouch-cache/1-Link/Xamarin.iOS.dll
+ObjectiveCClass=OBJC_CLASS_$_ResultData
+	/Users/chandrakant/Desktop/TestBindingSample/TestBindingSample/obj/iPhone/Debug/device-builds/iphone11.8-13.6/mtouch-cache/1-Link/NativeLibrary.dll
+ObjectiveCClass=OBJC_CLASS_$_ResultDict
+	/Users/chandrakant/Desktop/TestBindingSample/TestBindingSample/obj/iPhone/Debug/device-builds/iphone11.8-13.6/mtouch-cache/1-Link/NativeLibrary.dll
+ObjectiveCClass=OBJC_CLASS_$_TODOClass
+	/Users/chandrakant/Desktop/TestBindingSample/TestBindingSample/obj/iPhone/Debug/device-builds/iphone11.8-13.6/mtouch-cache/1-Link/NativeLibrary.dll
+Function=mono_pmip

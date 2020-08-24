@@ -1,0 +1,31 @@
+# Version: 13.20.2.2 (d16-7): 817b6f72a
+/Library/Frameworks/Xamarin.iOS.framework/Versions/13.20.2.2/lib/mtouch/mtouch.exe \
+	--debug \
+	--sgen-conc \
+	'/target-framework:Xamarin.iOS,Version=v1.0' \
+	--http-message-handler=NSUrlSessionHandler \
+	--cache=/Users/chandrakant/Desktop/TestBindingSample/TestBindingSample/obj/iPhone/Debug/device-builds/iphone11.8-13.6/mtouch-cache \
+	--root-assembly=/Users/chandrakant/Desktop/TestBindingSample/TestBindingSample/bin/iPhone/Debug/TestBindingSample.exe \
+	--sdkroot=/Applications/Xcode.app/Contents/Developer \
+	--dev=/Users/chandrakant/Desktop/TestBindingSample/TestBindingSample/bin/iPhone/Debug/device-builds/iphone11.8-13.6/TestBindingSample.app \
+	--executable=TestBindingSample \
+	--linksdkonly \
+	--sdk=13.6 \
+	--targetver=10.0 \
+	--aot-options=-O=-float32 \
+	--abi=arm64 \
+	--symbollist=/Users/chandrakant/Desktop/TestBindingSample/TestBindingSample/obj/iPhone/Debug/device-builds/iphone11.8-13.6/mtouch-symbols.list \
+	--dsym=no \
+	-r=/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/mscorlib.dll \
+	-r=/Users/chandrakant/Desktop/TestBindingSample/NativeDLL/NativeLibrary.dll \
+	-r=/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/OpenTK-1.0.dll \
+	-r=/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/System.Core.dll \
+	-r=/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/System.dll \
+	-r=/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/Facades/System.Drawing.Common.dll \
+	-r=/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/System.Numerics.dll \
+	-r=/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/System.Numerics.Vectors.dll \
+	-r=/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/System.Xml.dll \
+	-r=/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/Xamarin.iOS.dll \
+	-r=/Users/chandrakant/.nuget/packages/xamarin.essentials/1.5.3.2/lib/xamarinios10/Xamarin.Essentials.dll \
+	-r=/Users/chandrakant/Desktop/TestBindingSample/NativeDLL/NativeLibrary.dll \
+	@/Users/chandrakant/Desktop/TestBindingSample/TestBindingSample/obj/iPhone/Debug/device-builds/iphone11.8-13.6/response-file.rsp \

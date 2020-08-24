@@ -1,0 +1,29 @@
+﻿<Properties StartupConfiguration="{4FAAC3F9-6430-45A4-BDB7-3E7EA6C33AC9}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="TestBindingSample/ViewController.cs">
+    <Files>
+      <File FileName="TestBindingSample/ViewController.designer.cs" Line="1" Column="1" />
+      <File FileName="TestBindingSample/ViewController.cs" Line="14" Column="9" />
+      <File FileName="TestBindingSample/Info.plist" />
+      <File FileName="TestBindingSample/Main.cs" Line="12" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="TestBindingSample" expanded="True">
+            <Node name="TestBindingSample" expanded="True">
+              <Node name="References" expanded="True" />
+              <Node name="ViewController.cs" expanded="True" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.TestBindingSample automaticSigning="False" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.2EF8D87D-D44A-44AB-8714-7875FEDBF89A" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

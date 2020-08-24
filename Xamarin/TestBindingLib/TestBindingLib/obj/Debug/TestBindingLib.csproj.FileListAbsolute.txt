@@ -1,0 +1,6 @@
+/Users/chandrakant/Desktop/TestBindingLib/TestBindingLib/obj/Debug/TestBindingLib.csprojAssemblyReference.cache
+/Users/chandrakant/Desktop/TestBindingLib/TestBindingLib/bin/Debug/NativeLibrary.dll
+/Users/chandrakant/Desktop/TestBindingLib/TestBindingLib/bin/Debug/NativeLibrary.pdb
+/Users/chandrakant/Desktop/TestBindingLib/TestBindingLib/obj/Debug/TestBindingLib.csproj.CoreCompileInputs.cache
+/Users/chandrakant/Desktop/TestBindingLib/TestBindingLib/obj/Debug/NativeLibrary.dll
+/Users/chandrakant/Desktop/TestBindingLib/TestBindingLib/obj/Debug/NativeLibrary.pdb
