@@ -1,0 +1,11 @@
+framework module HCSConnectProxy {
+  umbrella header "HCSConnectProxy.h"
+
+  export *
+  module * { export * }
+}
+
+module HCSConnectProxy.Swift {
+    header "HCSConnectProxy-Swift.h"
+    requires objc
+}
