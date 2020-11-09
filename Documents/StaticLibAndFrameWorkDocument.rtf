@@ -10,7 +10,7 @@
 \cssrgb\c0\c63852\c84489;\csgenericrgb\c0\c0\c0\c85000;\csgenericrgb\c100000\c100000\c100000;\csgenericrgb\c77000\c10200\c8600;\csgenericrgb\c60759\c13753\c57628;
 \csgenericrgb\c22454\c0\c62803;\csgenericrgb\c42190\c21278\c66379;\csgenericrgb\c10981\c27276\c28869;\csgenericrgb\c19418\c42935\c45455;\csgenericrgb\c36526\c42188\c47515;
 \csgenericrgb\c11000\c0\c81000;\csgenericrgb\c39147\c22031\c12446;}
-\paperw11900\paperh16840\margl1440\margr1440\vieww27480\viewh15080\viewkind1
+\paperw11900\paperh16840\margl1440\margr1440\vieww27780\viewh15080\viewkind1
 \pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
 
 \f0\fs28 \cf2 \cb3 Static Library                                                                                                                
@@ -749,6 +749,7 @@ By using script we can merge device and simulator . swiftModule and replace fram
 \
 \
 Question 3. Access swift framework on Objective C project. It may sometime error.\
+\
 \pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
 
 \fs28 \cf2 \cb3 Swift Framework                                                                                                             
@@ -767,8 +768,9 @@ Answer:- Don\'92t forgot to Other linker flag -Objc\
 \f0\b0\fs24 \cf6 \cb7 \
 \pard\tx593\pardeftab593\pardirnatural\partightenfactor0
 \cf6 \
+\pard\tx593\pardeftab593\pardirnatural\partightenfactor0
 
-\f1\b 1. Check .a file build architectures 
+\f1\b \cf6 1. Check .a file build architectures 
 \f0\b0 \
 \
 Step 1. Open terminal\
@@ -790,16 +792,18 @@ lipo -info frameworkname.framework/framework name\
 \
 
 \f1\b 3.  How to remove unsupported Architecture from framework\
+\pard\tx593\pardeftab593\pardirnatural\partightenfactor0
 
-\f0\b0 \
+\f0\b0 \cf6 \
 Step 1. Open terminal\
 Step 2. Navigate to framework file path\
 Step 3. Run command \
 \
 lipo -remove ArchituctureName  frameworkname.framework/frameworkname -o frameworkname.framework/frameworkname\
 \
+\pard\tx593\pardeftab593\pardirnatural\partightenfactor0
 
-\f1\b 4.  How to remove unsupported Architecture from .a
+\f1\b \cf6 4.  How to remove unsupported Architecture from .a
 \f0\b0 \
 \
 Step 1. Open terminal\
@@ -835,6 +839,7 @@ cp -r \cf8 "\cf6 $\{SIMULATOR_LIBRARY_PATH\}\cf8 /\cf6 $\{FRAMEWORK_NAME\}\cf8 .
 \pard\tx593\pardeftab593\pardirnatural\partightenfactor0
 \cf8 \cb7 \
 \
+\pard\tx593\pardeftab593\pardirnatural\partightenfactor0
 
 \f1\b \cf6 6. Merge device and simulator .swiftModule for  framework. If facing issue architecture issue in compiling. 
 \f0\b0 \
@@ -874,4 +879,31 @@ Simulator support architecture: x86_64\
 \
 With FAT framework or lib while deploying app on Appstore or achieve will not work. Will give IPA processing error. Means you will not able to Achieve if framework have Architecture x86_64.  Please remove x86_64 architecture from the framework or lib and archive.\
 \
-For removing architecture follow below steps 3 and 4.}
+For removing architecture follow below steps 3 and 4.\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\fs28 \cf2 \cb3 Swift Framework                                                                                                             
+\fs24 \cb1 \
+\pard\tx593\pardeftab593\pardirnatural\partightenfactor0
+\cf6 \cb7 \
+\
+\pard\tx593\pardeftab593\pardirnatural\partightenfactor0
+
+\f1\b \cf6 9.o Delete arch from .a file\
+\
+\pard\tx593\pardeftab593\pardirnatural\partightenfactor0
+
+\f0\b0\fs18 \cf6 lipo -remove archName fileName.a -o fileName.a \
+\
+\
+\pard\tx593\pardeftab593\pardirnatural\partightenfactor0
+
+\f1\b\fs24 \cf6 10.o check iOS SDK version\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f0\b0 \cf6 \
+
+\fs18 xcodebuild -showsdk
+\fs24 \
+}

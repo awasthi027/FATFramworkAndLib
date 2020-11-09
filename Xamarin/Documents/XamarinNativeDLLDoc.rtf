@@ -2,17 +2,18 @@
 \cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fnil\fcharset0 Georgia;\f1\fnil\fcharset0 Georgia-Bold;\f2\froman\fcharset0 Times-Roman;
 \f3\fmodern\fcharset0 Courier;}
 {\colortbl;\red255\green255\blue255;\red255\green255\blue255;\red252\green112\blue56;\red0\green0\blue0;
-\red191\green191\blue191;}
+\red191\green191\blue191;\red255\green255\blue255;}
 {\*\expandedcolortbl;;\cssrgb\c100000\c100000\c100000;\cssrgb\c100000\c52407\c27938;\cssrgb\c0\c0\c0;
-\csgray\c79525;}
+\csgray\c79525;\cssrgb\c100000\c100000\c100000;}
 {\*\listtable{\list\listtemplateid1\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{square\}}{\leveltext\leveltemplateid1\'01\uc0\u9642 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid1}
 {\list\listtemplateid2\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{square\}}{\leveltext\leveltemplateid101\'01\uc0\u9642 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid2}}
 {\*\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}{\listoverride\listid2\listoverridecount0\ls2}}
-\paperw11900\paperh16840\margl1440\margr1440\vieww25540\viewh15080\viewkind1
+\paperw11900\paperh16840\margl1440\margr1440\vieww26140\viewh15380\viewkind1
 \pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
 
 \f0\fs28 \cf2 \cb3 Bind Objective-C and Swift static lib and framework with Xamarin Lib                                                                                                             
 \fs24 \cb1 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
 \cf0 \
 \pard\pardeftab720\sa240\partightenfactor0
 
@@ -1073,7 +1074,7 @@ Step 2. We are sure swift static compiling for device and simulator. As we know 
 \
 Step 3. Create Swift framework and create on Objective Proxy class of Swift public class. \
 \
-Don\'92t forgot to add TMTSFResources.bundle in framework and copied bundle resouirces.\
+Don\'92t forgot to add TMTSFResources.bundle in framework and copied bundle resources.\
 \
 Step 4. Create Universal framework HCSConnectProxy, Again I saying it should compile for both device and simulator.\
 \
@@ -1124,10 +1125,12 @@ APIDefinations.cs and Structs.cs\cf4 \expnd0\expndtw0\kerning0
 \
 \pard\pardeftab720\sa240\partightenfactor0
 \cf4 Command:-\
-\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardeftab593\pardirnatural\partightenfactor0
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
 
-\fs20 \cf4 \cb2 \kerning1\expnd0\expndtw0 \CocoaLigature0 sharpie bind --output=/Users/chandrakant/Desktop/XamarinClasses --namespace=HCSConnectProxy --sdk=iphoneos13.6 /Users/chandrakant/Desktop/HCSConnectProxy.framework/Headers/*.h\
-\
+\fs18 \cf4 \cb6 \kerning1\expnd0\expndtw0 \CocoaLigature0 sharpie bind --output=/Users/chandrakant/Desktop/XamarinClasses --namespace=IgniteConnectSDK --sdk=iphoneos14.0 /Users/chandrakant/Desktop/HCSConnectProxy.framework/Headers/*.h
+\fs20 \cf4 \cb2 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardeftab593\pardirnatural\partightenfactor0
+\cf4 \
 \pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardeftab720\pardirnatural\partightenfactor0
 
 \fs24 \cf4 Step 12. Copy paste related public .h file source code in  \cf0 \cb1 \CocoaLigature1 APIDefinations.cs and Structs.cs files\
@@ -1148,18 +1151,18 @@ using ObjCRuntime;\
 using Foundation;\
 using UIKit;\
 \
- namespace AhaHCSConnect\
+ namespace IgniteConnectSDK\
 \{\
-	// @interface HCSServiceManagerProxy : NSObject\
+	// @interface IgniteConnectManager : NSObject\
 	[BaseType (typeof(NSObject))]\
 	[DisableDefaultCtor]\
-	interface HCSServiceManagerProxy\
+	interface IgniteConnectManager\
 	\{\
 		[Wrap ("WeakDelegate")]\
 		[NullAllowed]\
 		HCSServiceManagerProxyDelegate Delegate \{ get; set; \}\
 \
-		// @property (nonatomic, strong) id<HCSServiceManagerProxyDelegate> _Nullable delegate;\
+		// @property (nonatomic, strong) id<IgniteConnectManagerDelegate> _Nullable delegate;\
 		[NullAllowed, Export ("delegate", ArgumentSemantic.Strong)]\
 		NSObject WeakDelegate \{ get; set; \}\
 \
@@ -1167,73 +1170,73 @@ using UIKit;\
 		[NullAllowed]\
 		HCSServiceManagerProxyDataSource DataSource \{ get; set; \}\
 \
-		// @property (nonatomic, strong) id<HCSServiceManagerProxyDataSource> _Nullable dataSource;\
+		// @property (nonatomic, strong) id<IgniteConnectManagerDataSource> _Nullable dataSource;\
 		[NullAllowed, Export ("dataSource", ArgumentSemantic.Strong)]\
 		NSObject WeakDataSource \{ get; set; \}\
 \
-		// @property (readonly, nonatomic, strong, class) HCSServiceManagerProxy * _Nonnull shared;\
+		// @property (readonly, nonatomic, strong, class) IgniteConnectManager * _Nonnull shared;\
 		[Static]\
 		[Export ("shared", ArgumentSemantic.Strong)]\
 		HCSServiceManagerProxy Shared \{ get; \}\
 \
-		// -(void)invokeClassWithParmaDict:(NSDictionary<NSString *,id> * _Nonnull)parmaDict delegate:(id<HCSServiceManagerProxyDelegate> _Nonnull)delegate dataSource:(id<HCSServiceManagerProxyDataSource> _Nonnull)dataSource;\
+		// -(void)invokeClassWithParmaDict:(NSDictionary<NSString *,id> * _Nonnull)parmaDict delegate:(id<IgniteConnectManager> _Nonnull)delegate dataSource:(id<HCSServiceManagerProxyDataSource> _Nonnull)dataSource;\
 		[Export ("invokeClassWithParmaDict:delegate:dataSource:")]\
-		void InvokeClassWithParmaDict (NSDictionary<NSString, NSObject> parmaDict, HCSServiceManagerProxyDelegate @delegate, HCSServiceManagerProxyDataSource dataSource);\
+		void InvokeClassWithParmaDict (NSDictionary<NSString, NSObject> parmaDict, HCSServiceManagerProxyDelegate @delegate, IgniteConnectManagerDataSource dataSource);\
 \
 		// -(ResultData * _Nonnull)sendRequestWithReq:(NSData * _Nonnull)payload contentType:(NSString * _Nonnull)contentType serviceIdentifier:(NSString * _Nonnull)serviceIdentifier __attribute__((warn_unused_result));\
-		[Export ("sendRequestWithReq:contentType:serviceIdentifier:")]\
-		ResultData SendRequestWithReq (NSData payload, string contentType, string serviceIdentifier);\
+		[Export ("sendRequest:contentType:serviceIdentifier:")]\
+		ResultData SendRequest (NSData payload, string contentType, string serviceIdentifier);\
 \
-		// -(void)sendAsyncRequestWithReq:(NSData * _Nonnull)payload contentType:(NSString * _Nonnull)contentType serviceIdentifier:(NSString * _Nonnull)serviceIdentifier completed:(void (^ _Nonnull)(ResultData * _Nonnull))completed;\
-		[Export ("sendAsyncRequestWithReq:contentType:serviceIdentifier:completed:")]\
-		void SendAsyncRequestWithReq (NSData payload, string contentType, string serviceIdentifier, Action<ResultData> completed);\
+		// -(void)sendAsyncRequest:(NSData * _Nonnull)payload contentType:(NSString * _Nonnull)contentType serviceIdentifier:(NSString * _Nonnull)serviceIdentifier completed:(void (^ _Nonnull)(ResultData * _Nonnull))completed;\
+		[Export ("sendAsyncRequest:contentType:serviceIdentifier:completed:")]\
+		void SendAsyncRequest (NSData payload, string contentType, string serviceIdentifier, Action<ResultData> completed);\
 	\}\
 \
 	// @protocol HCSServiceManagerProxyDataSource <NSObject>\
-	[Protocol (Name = "_TtP15HCSConnectProxy32HCSServiceManagerProxyDataSource_"), Model (AutoGeneratedName = true)]\
-	[BaseType (typeof(NSObject), Name = "_TtP15HCSConnectProxy32HCSServiceManagerProxyDataSource_")]\
-	interface HCSServiceManagerProxyDataSource\
+	[Protocol (Name = "_TtP15HCSConnectProxy32 IgniteConnectManager DataSource_"), Model (AutoGeneratedName = true)]\
+	[BaseType (typeof(NSObject), Name = "_TtP15HCSConnectProxy32 IgniteConnectManager DataSource_")]\
+	interface IgniteConnectManagerDataSource\
 	\{\
-		// @required -(ResultDict * _Nonnull)onQuery:(HCSServiceManagerProxy * _Nonnull)manager :(NSData * _Nonnull)reqData :(NSString * _Nonnull)reqContentType :(NSString * _Nonnull)serviceIdentifier __attribute__((warn_unused_result));\
+		// @required -(ResultDict * _Nonnull)onQuery:(IgniteConnectManager * _Nonnull)manager :(NSData * _Nonnull)reqData :(NSString * _Nonnull)reqContentType :(NSString * _Nonnull)serviceIdentifier __attribute__((warn_unused_result));\
 		[Abstract]\
 		[Export ("onQuery::::")]\
 		ResultDict OnQuery (HCSServiceManagerProxy manager, NSData reqData, string reqContentType, string serviceIdentifier);\
 \
-		// @required -(void)onAsyncQuery:(HCSServiceManagerProxy * _Nonnull)manager :(NSData * _Nonnull)reqData :(NSString * _Nonnull)reqContentType :(NSString * _Nonnull)serviceIdentifier completionBlock:(void (^ _Nonnull)(ResultDict * _Nonnull))completion;\
+		// @required -(void)onAsyncQuery:(IgniteConnectManager * _Nonnull)manager :(NSData * _Nonnull)reqData :(NSString * _Nonnull)reqContentType :(NSString * _Nonnull)serviceIdentifier completionBlock:(void (^ _Nonnull)(ResultDict * _Nonnull))completion;\
 		[Abstract]\
 		[Export ("onAsyncQuery::::completionBlock:")]\
 		void OnAsyncQuery (HCSServiceManagerProxy manager, NSData reqData, string reqContentType, string serviceIdentifier, Action<ResultDict> completion);\
 	\}\
 \
 	// @protocol HCSServiceManagerProxyDelegate <NSObject>\
-	[Protocol (Name = "_TtP15HCSConnectProxy30HCSServiceManagerProxyDelegate_"), Model (AutoGeneratedName = true)]\
-	[BaseType (typeof(NSObject), Name = "_TtP15HCSConnectProxy30HCSServiceManagerProxyDelegate_")]\
+	[Protocol (Name = "_TtP15HCSConnectProxy30IgniteConnectManager Delegate_"), Model (AutoGeneratedName = true)]\
+	[BaseType (typeof(NSObject), Name = "_TtP15HCSConnectProxy30 IgniteConnectManager Delegate_")]\
 	interface HCSServiceManagerProxyDelegate\
 	\{\
-		// @required -(void)didHUServiceConnect:(HCSServiceManagerProxy * _Nonnull)manager serviceIdentifier:(NSString * _Nonnull)serviceIdentifier;\
+		// @required -(void)didHUServiceConnect:(IgniteConnectManager * _Nonnull)manager serviceIdentifier:(NSString * _Nonnull)serviceIdentifier;\
 		[Abstract]\
 		[Export ("didHUServiceConnect:serviceIdentifier:")]\
-		void DidHUServiceConnect (HCSServiceManagerProxy manager, string serviceIdentifier);\
+		void DidHUServiceConnect (IgniteConnectManager manager, string serviceIdentifier);\
 \
-		// @required -(void)didHUServiceDisconnect:(HCSServiceManagerProxy * _Nonnull)manager serviceInfo:(NSDictionary<NSString *,id> * _Nonnull)serviceInfo;\
+		// @required -(void)didHUServiceDisconnect:(IgniteConnectManager * _Nonnull)manager serviceInfo:(NSDictionary<NSString *,id> * _Nonnull)serviceInfo;\
 		[Abstract]\
 		[Export ("didHUServiceDisconnect:serviceInfo:")]\
-		void DidHUServiceDisconnect (HCSServiceManagerProxy manager, NSDictionary<NSString, NSObject> serviceInfo);\
+		void DidHUServiceDisconnect (IgniteConnectManager manager, NSDictionary<NSString, NSObject> serviceInfo);\
 \
-		// @required -(void)didAccessoryConnect:(HCSServiceManagerProxy * _Nonnull)manager;\
+		// @required -(void)didAccessoryConnect:(IgniteConnectManager * _Nonnull)manager;\
 		[Abstract]\
 		[Export ("didAccessoryConnect:")]\
-		void DidAccessoryConnect (HCSServiceManagerProxy manager);\
+		void DidAccessoryConnect (IgniteConnectManager manager);\
 \
-		// @required -(void)didAccessoryDisconnect:(HCSServiceManagerProxy * _Nonnull)manager;\
+		// @required -(void)didAccessoryDisconnect:(IgniteConnectManager * _Nonnull)manager;\
 		[Abstract]\
 		[Export ("didAccessoryDisconnect:")]\
-		void DidAccessoryDisconnect (HCSServiceManagerProxy manager);\
+		void DidAccessoryDisconnect (IgniteConnectManager manager);\
 \
-		// @required -(void)notifyData:(HCSServiceManagerProxy * _Nonnull)manager payload:(NSData * _Nonnull)payload contentType:(NSString * _Nonnull)contentType serviceIdentifier:(NSString * _Nonnull)serviceIdentifier;\
+		// @required -(void)notifyData:(IgniteConnectManager * _Nonnull)manager payload:(NSData * _Nonnull)payload contentType:(NSString * _Nonnull)contentType serviceIdentifier:(NSString * _Nonnull)serviceIdentifier;\
 		[Abstract]\
 		[Export ("notifyData:payload:contentType:serviceIdentifier:")]\
-		void NotifyData (HCSServiceManagerProxy manager, NSData payload, string contentType, string serviceIdentifier);\
+		void NotifyData (IgniteConnectManager manager, NSData payload, string contentType, string serviceIdentifier);\
 	\}\
 \
 	// @interface ResultData : NSObject\
@@ -1322,25 +1325,25 @@ using System.Linq;\
 \
 namespace AhaHCSConnectSample\
 \{\
-    public class ServiceManagerCallBack : HCSServiceManagerProxyDelegate\
+    public class ServiceManagerCallBack : IgniteConnectManagerDelegate\
     \{\
-        public override void DidHUServiceConnect(HCSServiceManagerProxy manager, string serviceIdentifier)\
+        public override void DidHUServiceConnect(IgniteConnectManager manager, string serviceIdentifier)\
         \{\
 \
         \}\
-        public override void DidHUServiceDisconnect(HCSServiceManagerProxy manager, NSDictionary<NSString, NSObject> serviceDictionary)\
+        public override void DidHUServiceDisconnect(IgniteConnectManager manager, NSDictionary<NSString, NSObject> serviceDictionary)\
         \{\
 \
         \}\
-        public override void DidAccessoryConnect(HCSServiceManagerProxy manager)\
+        public override void DidAccessoryConnect(IgniteConnectManager manager)\
         \{\
 \
         \}\
-        public override void DidAccessoryDisconnect(HCSServiceManagerProxy manager)\
+        public override void DidAccessoryDisconnect(IgniteConnectManager manager)\
         \{\
 \
         \}\
-        public override void NotifyData(HCSServiceManagerProxy manager, NSData payload, string contentType, string serviceIdentifier)\
+        public override void NotifyData(IgniteConnectManager manager, NSData payload, string contentType, string serviceIdentifier)\
         \{\
             NSError error = null;\
             NSDictionary notityData = (NSDictionary)NSJsonSerialization.Deserialize(payload, 0, out error);\
@@ -1348,9 +1351,9 @@ namespace AhaHCSConnectSample\
         \}\
 \
     \}\
-    public class ServiceManagerDataSourceCallBack : HCSServiceManagerProxyDataSource\
+    public class ServiceManagerDataSourceCallBack : IgniteConnectManagerDataSource\
     \{\
-        public override ResultDict OnQuery(HCSServiceManagerProxy manager, NSData reqData, string reqContentType, string serviceIdentifier)\
+        public override ResultDict OnQuery(IgniteConnectManager manager, NSData reqData, string reqContentType, string serviceIdentifier)\
         \{\
             NSError error = null;\
             var dataDict = (NSDictionary)NSJsonSerialization.Deserialize(reqData, NSJsonReadingOptions.AllowFragments, out error);\
@@ -1360,7 +1363,7 @@ namespace AhaHCSConnectSample\
             var dict = new ResultDict();\
             return dict;\
         \}\
-        public override void OnAsyncQuery(HCSServiceManagerProxy manager, NSData reqData, string reqContentType, string serviceIdentifier, Action<ResultDict> completion)\
+        public override void OnAsyncQuery(IgniteConnectManager manager, NSData reqData, string reqContentType, string serviceIdentifier, Action<ResultDict> completion)\
         \{\
 \
         \}\
@@ -1368,7 +1371,7 @@ namespace AhaHCSConnectSample\
     \}\
      public partial class ViewController : UIViewController\
     \{\
-        HCSServiceManagerProxy manager = HCSServiceManagerProxy.Shared;\
+        IgniteConnectManager manager = IgniteConnectManager.Shared;\
         NSString serviceIdentifier = new NSString("com.storeforward.telemetrydata");\
 \
         public ViewController(IntPtr handle) : base(handle)\
@@ -1420,7 +1423,7 @@ namespace AhaHCSConnectSample\
              NSDictionary responseDict = NSDictionary.FromObjectsAndKeys(response.Values.ToArray(), response.Keys.ToArray());\
              var respPayload = NSJsonSerialization.Serialize(NSData.FromObject(responseDict), NSJsonWritingOptions.PrettyPrinted, out error);\
             var respContentType = new NSString("application/json");\
-            manager.SendSyncRequestWithReq(respPayload, respContentType, serviceIdentifier);\
+            manager.SendSyncRequest(respPayload, respContentType, serviceIdentifier);\
 \
         \}\
     \}\

@@ -22,6 +22,7 @@
     self.proxyObj = [HCSServiceManagerProxy shared];
     NSDictionary *reqDict = @{@"appInfo":@{@"appIdentifier": @"Polaris",@"version":@"1.0",@"subVersion":@""},@"serviceInfo":@[@"com.storeforward.telemetrydata"]};
     [self.proxyObj invokeClassWithParmaDict:reqDict delegate:self dataSource:self];
+   
     
 }
 - (ResultDict * _Nonnull)onQuery:(HCSServiceManagerProxy * _Nonnull)manager :(NSData * _Nonnull)reqData :(NSString * _Nonnull)reqContentType :(NSString * _Nonnull)serviceIdentifier  {
