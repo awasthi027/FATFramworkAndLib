@@ -13,11 +13,9 @@
 		CB1EFEC024F2B9D5004CC487 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB1EFEBF24F2B9D5004CC487 /* Assets.xcassets */; };
 		CB1EFEC324F2B9D5004CC487 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB1EFEC124F2B9D5004CC487 /* LaunchScreen.storyboard */; };
 		CB1EFEC624F2B9D5004CC487 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CB1EFEC524F2B9D5004CC487 /* main.m */; };
+		CB29A1A325755842006F1277 /* CocoaLumberjack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB29A1A125755842006F1277 /* CocoaLumberjack.framework */; };
+		CB29A1A425755842006F1277 /* HCSConnectProxy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB29A1A225755842006F1277 /* HCSConnectProxy.framework */; };
 		CB58951B24F4F99500363DE4 /* TMTSFResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = CB58951A24F4F99500363DE4 /* TMTSFResources.bundle */; };
-		CB58953024F4FDA500363DE4 /* CocoaLumberjack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB58952E24F4FD7B00363DE4 /* CocoaLumberjack.framework */; };
-		CB58953124F4FDA500363DE4 /* CocoaLumberjack.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CB58952E24F4FD7B00363DE4 /* CocoaLumberjack.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		CB58953224F4FDA900363DE4 /* HCSConnectProxy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB58952C24F4FD7400363DE4 /* HCSConnectProxy.framework */; };
-		CB58953324F4FDA900363DE4 /* HCSConnectProxy.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CB58952C24F4FD7400363DE4 /* HCSConnectProxy.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -27,8 +25,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				CB58953124F4FDA500363DE4 /* CocoaLumberjack.framework in Embed Frameworks */,
-				CB58953324F4FDA900363DE4 /* HCSConnectProxy.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -46,9 +42,9 @@
 		CB1EFEC224F2B9D5004CC487 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CB1EFEC424F2B9D5004CC487 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CB1EFEC524F2B9D5004CC487 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CB29A1A125755842006F1277 /* CocoaLumberjack.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CocoaLumberjack.framework; sourceTree = "<group>"; };
+		CB29A1A225755842006F1277 /* HCSConnectProxy.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = HCSConnectProxy.framework; sourceTree = "<group>"; };
 		CB58951A24F4F99500363DE4 /* TMTSFResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = TMTSFResources.bundle; sourceTree = SOURCE_ROOT; };
-		CB58952C24F4FD7400363DE4 /* HCSConnectProxy.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = HCSConnectProxy.framework; sourceTree = "<group>"; };
-		CB58952E24F4FD7B00363DE4 /* CocoaLumberjack.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CocoaLumberjack.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,8 +52,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CB58953224F4FDA900363DE4 /* HCSConnectProxy.framework in Frameworks */,
-				CB58953024F4FDA500363DE4 /* CocoaLumberjack.framework in Frameworks */,
+				CB29A1A325755842006F1277 /* CocoaLumberjack.framework in Frameworks */,
+				CB29A1A425755842006F1277 /* HCSConnectProxy.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -102,8 +98,8 @@
 		CB1EFECC24F2BA9D004CC487 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				CB58952E24F4FD7B00363DE4 /* CocoaLumberjack.framework */,
-				CB58952C24F4FD7400363DE4 /* HCSConnectProxy.framework */,
+				CB29A1A125755842006F1277 /* CocoaLumberjack.framework */,
+				CB29A1A225755842006F1277 /* HCSConnectProxy.framework */,
 			);
 			path = Frameworks;
 			sourceTree = "<group>";
@@ -142,7 +138,7 @@
 		CB1EFEA824F2B9D3004CC487 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 1160;
+				LastUpgradeCheck = 1220;
 				ORGANIZATIONNAME = "Ashish Awasthi";
 				TargetAttributes = {
 					CB1EFEAF24F2B9D3004CC487 = {
@@ -241,6 +237,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -265,7 +262,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -299,6 +296,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -317,7 +315,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -335,7 +333,7 @@
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/FATTestingObjC/Frameworks";
 				INFOPLIST_FILE = FATTestingObjC/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -358,7 +356,7 @@
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/FATTestingObjC/Frameworks";
 				INFOPLIST_FILE = FATTestingObjC/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

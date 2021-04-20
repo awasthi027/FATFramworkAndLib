@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/HCSConnectProxy-Swift.h</key>
 		<data>
-		+bCX4+BU246evmZGGxQM46/BmP8=
+		awSjn7YxvlfwHsv+NqHtiaNXOgw=
 		</data>
 		<key>Headers/HCSConnectProxy.h</key>
 		<data>
@@ -14,67 +14,67 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		iQHTqZUfXRhevC3+s+lXV90IpZQ=
+		7VvYMoTCRj4YJaVHwy1OaTBNbK8=
 		</data>
 		<key>Modules/HCSConnectProxy.swiftmodule/Project/arm.swiftsourceinfo</key>
 		<data>
-		x9dJ3t2abrup+ES98qKFGODuYaM=
+		t6jQcd9Ofz2h8w6v+FdB9l4pSH4=
 		</data>
 		<key>Modules/HCSConnectProxy.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
 		<data>
-		FtQwiCdHswhiZI8UNKIyoeI9KW8=
+		95aEvgizoC3InxslXI+1mC3PvaE=
 		</data>
 		<key>Modules/HCSConnectProxy.swiftmodule/Project/arm64.swiftsourceinfo</key>
 		<data>
-		FtQwiCdHswhiZI8UNKIyoeI9KW8=
+		95aEvgizoC3InxslXI+1mC3PvaE=
 		</data>
 		<key>Modules/HCSConnectProxy.swiftmodule/Project/armv7-apple-ios.swiftsourceinfo</key>
 		<data>
-		x9dJ3t2abrup+ES98qKFGODuYaM=
+		t6jQcd9Ofz2h8w6v+FdB9l4pSH4=
 		</data>
 		<key>Modules/HCSConnectProxy.swiftmodule/Project/armv7.swiftsourceinfo</key>
 		<data>
-		x9dJ3t2abrup+ES98qKFGODuYaM=
+		t6jQcd9Ofz2h8w6v+FdB9l4pSH4=
 		</data>
 		<key>Modules/HCSConnectProxy.swiftmodule/arm.swiftdoc</key>
 		<data>
-		I0AlAAiatAdxlDAyocdd5CGMzE4=
+		8vz5r64rjmlTyXaRpjrvLqTe1g0=
 		</data>
 		<key>Modules/HCSConnectProxy.swiftmodule/arm.swiftmodule</key>
 		<data>
-		LKfLpura0ZHA++nfr/C+gloux2w=
+		dCKlKsPnacoe0BSuVNtodpsWVx0=
 		</data>
 		<key>Modules/HCSConnectProxy.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		DOIoSPXQfoFO+5JJcwHe5vS8txs=
+		mKzahXFrGuPmrKlk5xPlMW3uMAY=
 		</data>
 		<key>Modules/HCSConnectProxy.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		9CVtiUrvqWBV8Qrm4fhdN3EJuYk=
+		TZjAtz0HOmURVlZgtq8frV93Xzw=
 		</data>
 		<key>Modules/HCSConnectProxy.swiftmodule/arm64.swiftdoc</key>
 		<data>
-		DOIoSPXQfoFO+5JJcwHe5vS8txs=
+		mKzahXFrGuPmrKlk5xPlMW3uMAY=
 		</data>
 		<key>Modules/HCSConnectProxy.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		9CVtiUrvqWBV8Qrm4fhdN3EJuYk=
+		TZjAtz0HOmURVlZgtq8frV93Xzw=
 		</data>
 		<key>Modules/HCSConnectProxy.swiftmodule/armv7-apple-ios.swiftdoc</key>
 		<data>
-		I0AlAAiatAdxlDAyocdd5CGMzE4=
+		8vz5r64rjmlTyXaRpjrvLqTe1g0=
 		</data>
 		<key>Modules/HCSConnectProxy.swiftmodule/armv7-apple-ios.swiftmodule</key>
 		<data>
-		LKfLpura0ZHA++nfr/C+gloux2w=
+		dCKlKsPnacoe0BSuVNtodpsWVx0=
 		</data>
 		<key>Modules/HCSConnectProxy.swiftmodule/armv7.swiftdoc</key>
 		<data>
-		I0AlAAiatAdxlDAyocdd5CGMzE4=
+		8vz5r64rjmlTyXaRpjrvLqTe1g0=
 		</data>
 		<key>Modules/HCSConnectProxy.swiftmodule/armv7.swiftmodule</key>
 		<data>
-		LKfLpura0ZHA++nfr/C+gloux2w=
+		dCKlKsPnacoe0BSuVNtodpsWVx0=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -99,11 +99,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			+bCX4+BU246evmZGGxQM46/BmP8=
+			awSjn7YxvlfwHsv+NqHtiaNXOgw=
 			</data>
 			<key>hash2</key>
 			<data>
-			RkQH9KZ4SG8sjqQmAHe+yXB/L/ryrVKW1rXBzV3+gyI=
+			KVnbiz+tylo8xUq2NunYbcsdH8DrJ43TL7URnVHc3mM=
 			</data>
 		</dict>
 		<key>Headers/HCSConnectProxy.h</key>
@@ -121,165 +121,165 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			x9dJ3t2abrup+ES98qKFGODuYaM=
+			t6jQcd9Ofz2h8w6v+FdB9l4pSH4=
 			</data>
 			<key>hash2</key>
 			<data>
-			Om6yQLexRYlXmgWfe1Ykkre5IKuofR5x/cXLq18RGZM=
+			OFiTlVSTPEXSQnGREslUbSsSftr2kq4jxbggWyK0Qd0=
 			</data>
 		</dict>
 		<key>Modules/HCSConnectProxy.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			FtQwiCdHswhiZI8UNKIyoeI9KW8=
+			95aEvgizoC3InxslXI+1mC3PvaE=
 			</data>
 			<key>hash2</key>
 			<data>
-			EdcaT+qZKWVO1theEeD7u69cCuGShuDWPspSICoWdRI=
+			qTFXYKdCuwgWFSrOh6TpIOHSdQ8zCYzC7Pus2pKruUU=
 			</data>
 		</dict>
 		<key>Modules/HCSConnectProxy.swiftmodule/Project/arm64.swiftsourceinfo</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			FtQwiCdHswhiZI8UNKIyoeI9KW8=
+			95aEvgizoC3InxslXI+1mC3PvaE=
 			</data>
 			<key>hash2</key>
 			<data>
-			EdcaT+qZKWVO1theEeD7u69cCuGShuDWPspSICoWdRI=
+			qTFXYKdCuwgWFSrOh6TpIOHSdQ8zCYzC7Pus2pKruUU=
 			</data>
 		</dict>
 		<key>Modules/HCSConnectProxy.swiftmodule/Project/armv7-apple-ios.swiftsourceinfo</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			x9dJ3t2abrup+ES98qKFGODuYaM=
+			t6jQcd9Ofz2h8w6v+FdB9l4pSH4=
 			</data>
 			<key>hash2</key>
 			<data>
-			Om6yQLexRYlXmgWfe1Ykkre5IKuofR5x/cXLq18RGZM=
+			OFiTlVSTPEXSQnGREslUbSsSftr2kq4jxbggWyK0Qd0=
 			</data>
 		</dict>
 		<key>Modules/HCSConnectProxy.swiftmodule/Project/armv7.swiftsourceinfo</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			x9dJ3t2abrup+ES98qKFGODuYaM=
+			t6jQcd9Ofz2h8w6v+FdB9l4pSH4=
 			</data>
 			<key>hash2</key>
 			<data>
-			Om6yQLexRYlXmgWfe1Ykkre5IKuofR5x/cXLq18RGZM=
+			OFiTlVSTPEXSQnGREslUbSsSftr2kq4jxbggWyK0Qd0=
 			</data>
 		</dict>
 		<key>Modules/HCSConnectProxy.swiftmodule/arm.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			I0AlAAiatAdxlDAyocdd5CGMzE4=
+			8vz5r64rjmlTyXaRpjrvLqTe1g0=
 			</data>
 			<key>hash2</key>
 			<data>
-			4GrjJpUfjV0ajRE86nxCusPogQYuKXuGJ0uUmHKNBT4=
+			AMxynkkivjtEQK64kxmysJwnkUZSQ0yxK2t9wRFlXHw=
 			</data>
 		</dict>
 		<key>Modules/HCSConnectProxy.swiftmodule/arm.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			LKfLpura0ZHA++nfr/C+gloux2w=
+			dCKlKsPnacoe0BSuVNtodpsWVx0=
 			</data>
 			<key>hash2</key>
 			<data>
-			kHx2u+WVOmItRBo4K1LHtxToRX0ZcMuZnRV5T7q+Sqs=
+			7SWozwfdj0zFHj4ExB2AcoMs39WqEJP29SU9Cd3O4bo=
 			</data>
 		</dict>
 		<key>Modules/HCSConnectProxy.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			DOIoSPXQfoFO+5JJcwHe5vS8txs=
+			mKzahXFrGuPmrKlk5xPlMW3uMAY=
 			</data>
 			<key>hash2</key>
 			<data>
-			kgGSjsoAvTANjI6vDnmsfmeGExiAL8Udvx5m8+84w6c=
+			jz5q7hQ20nF9xP1nOHK6l93Z4ZvUTjCTybkE6All+BU=
 			</data>
 		</dict>
 		<key>Modules/HCSConnectProxy.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			9CVtiUrvqWBV8Qrm4fhdN3EJuYk=
+			TZjAtz0HOmURVlZgtq8frV93Xzw=
 			</data>
 			<key>hash2</key>
 			<data>
-			7YVm1m7UhzH02CiIuy2S2jTHa5L1AWVEIg3MHGPI5c4=
+			Npcv5CxwezQrnBkqVz8xpo76kuYvpE5Zq0+Nr2xghCY=
 			</data>
 		</dict>
 		<key>Modules/HCSConnectProxy.swiftmodule/arm64.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			DOIoSPXQfoFO+5JJcwHe5vS8txs=
+			mKzahXFrGuPmrKlk5xPlMW3uMAY=
 			</data>
 			<key>hash2</key>
 			<data>
-			kgGSjsoAvTANjI6vDnmsfmeGExiAL8Udvx5m8+84w6c=
+			jz5q7hQ20nF9xP1nOHK6l93Z4ZvUTjCTybkE6All+BU=
 			</data>
 		</dict>
 		<key>Modules/HCSConnectProxy.swiftmodule/arm64.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			9CVtiUrvqWBV8Qrm4fhdN3EJuYk=
+			TZjAtz0HOmURVlZgtq8frV93Xzw=
 			</data>
 			<key>hash2</key>
 			<data>
-			7YVm1m7UhzH02CiIuy2S2jTHa5L1AWVEIg3MHGPI5c4=
+			Npcv5CxwezQrnBkqVz8xpo76kuYvpE5Zq0+Nr2xghCY=
 			</data>
 		</dict>
 		<key>Modules/HCSConnectProxy.swiftmodule/armv7-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			I0AlAAiatAdxlDAyocdd5CGMzE4=
+			8vz5r64rjmlTyXaRpjrvLqTe1g0=
 			</data>
 			<key>hash2</key>
 			<data>
-			4GrjJpUfjV0ajRE86nxCusPogQYuKXuGJ0uUmHKNBT4=
+			AMxynkkivjtEQK64kxmysJwnkUZSQ0yxK2t9wRFlXHw=
 			</data>
 		</dict>
 		<key>Modules/HCSConnectProxy.swiftmodule/armv7-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			LKfLpura0ZHA++nfr/C+gloux2w=
+			dCKlKsPnacoe0BSuVNtodpsWVx0=
 			</data>
 			<key>hash2</key>
 			<data>
-			kHx2u+WVOmItRBo4K1LHtxToRX0ZcMuZnRV5T7q+Sqs=
+			7SWozwfdj0zFHj4ExB2AcoMs39WqEJP29SU9Cd3O4bo=
 			</data>
 		</dict>
 		<key>Modules/HCSConnectProxy.swiftmodule/armv7.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			I0AlAAiatAdxlDAyocdd5CGMzE4=
+			8vz5r64rjmlTyXaRpjrvLqTe1g0=
 			</data>
 			<key>hash2</key>
 			<data>
-			4GrjJpUfjV0ajRE86nxCusPogQYuKXuGJ0uUmHKNBT4=
+			AMxynkkivjtEQK64kxmysJwnkUZSQ0yxK2t9wRFlXHw=
 			</data>
 		</dict>
 		<key>Modules/HCSConnectProxy.swiftmodule/armv7.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			LKfLpura0ZHA++nfr/C+gloux2w=
+			dCKlKsPnacoe0BSuVNtodpsWVx0=
 			</data>
 			<key>hash2</key>
 			<data>
-			kHx2u+WVOmItRBo4K1LHtxToRX0ZcMuZnRV5T7q+Sqs=
+			7SWozwfdj0zFHj4ExB2AcoMs39WqEJP29SU9Cd3O4bo=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
